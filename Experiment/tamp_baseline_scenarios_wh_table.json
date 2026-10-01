@@ -1,0 +1,93 @@
+{
+    "default_robot": "cyli_robo",
+    "robot_profiles": {
+        "cyli_robo": {
+            "effective_clearance_m": 0.542,
+            "inflation_m": {
+                "unloaded": 0.55,
+                "small": 0.60,
+                "medium": 0.68,
+                "large": 0.78
+            }
+        },
+        "rect_robo": {
+            "effective_clearance_m": 0.55,
+            "inflation_m": {
+                "unloaded": 0.56,
+                "small": 0.62,
+                "medium": 0.70,
+                "large": 0.80
+            }
+        },
+        "ridgeback_franka": {
+            "effective_clearance_m": 0.61,
+            "inflation_m": {
+                "unloaded": 0.62,
+                "small": 0.69,
+                "medium": 0.78,
+                "large": 0.90
+            }
+        }
+    },
+    "fixed_settings": {
+        "planning_timeout_sec": 60,
+        "start_pose_xy": [
+            0.0,
+            0.0
+        ],
+        "seeds": [
+            11,
+            23,
+            37,
+            41,
+            59
+        ]
+    },
+    "scenarios": [
+        {
+            "id": "WH_short_10_items",
+            "layout": "layout_horizontal_4shelves",
+            "num_packages": 10,
+            "urgent_count": 0,
+            "size_distribution": {
+                "small": 4,
+                "medium": 4,
+                "large": 2
+            },
+            "constraints": {
+                "urgent_first": false,
+                "load_dependent_inflation": false
+            }
+        },
+        {
+            "id": "WH_long_25_items",
+            "layout": "layout_vertical_4shelves",
+            "num_packages": 25,
+            "urgent_count": 0,
+            "size_distribution": {
+                "small": 9,
+                "medium": 10,
+                "large": 6
+            },
+            "constraints": {
+                "urgent_first": false,
+                "load_dependent_inflation": false
+            }
+        },
+        {
+            "id": "WH_hard_25_items",
+            "layout": "layout_Lshaped_4shelves",
+            "num_packages": 25,
+            "urgent_count": 5,
+            "size_distribution": {
+                "small": 7,
+                "medium": 10,
+                "large": 8
+            },
+            "constraints": {
+                "urgent_first": true,
+                "load_dependent_inflation": true
+            }
+        }
+    ]
+}

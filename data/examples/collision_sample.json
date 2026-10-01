@@ -1,0 +1,13 @@
+{
+  "format_version": "robotpath.collision.v1",
+  "description": "Small schema-only example; no Isaac Sim assets included.",
+  "robot_id": "ridgeback_franka",
+  "layout_id": "warehouse_default",
+  "sequence": {
+    "waypoints_m": [[0.0, 0.0, 0.0], [1.0, 0.5, 0.0]],
+    "collision_label": false,
+    "collision_index": null
+  },
+  "contacts": [],
+  "source": "synthetic_public_example"
+}

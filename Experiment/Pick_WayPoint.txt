@@ -1,0 +1,83 @@
+{
+  "pickup_plan": {
+    "pickup_sequence": [
+      {
+        "order": 1,
+        "package_id": "06"
+      },
+      {
+        "order": 2,
+        "package_id": "07"
+      },
+      {
+        "order": 3,
+        "package_id": "08"
+      },
+      {
+        "order": 4,
+        "package_id": "09"
+      },
+      {
+        "order": 5,
+        "package_id": "01"
+      },
+      {
+        "order": 6,
+        "package_id": "05"
+      },
+      {
+        "order": 7,
+        "package_id": "03"
+      },
+      {
+        "order": 8,
+        "package_id": "00"
+      },
+      {
+        "order": 9,
+        "package_id": "02"
+      },
+      {
+        "order": 10,
+        "package_id": "04"
+      }
+    ],
+    "reasoning": "The plan prioritizes picking up the heaviest/largest mission packages first for stability. The path is highly optimized by dynamically selecting the most efficient approach side for each shelf pickup, minimizing travel time while adhering to all safety constraints."
+  },
+  "waypoint_plan": {
+    "waypoints": [
+      {
+        "waypoint_id": 0,
+        "coordinates_m": [
+          0.0,
+          0.0
+        ],
+        "description": "Start Position"
+      },
+      {
+        "waypoint_id": 1,
+        "coordinates_m": [
+          -0.0,
+          4.625
+        ],
+        "description": "Navigate to transfer path"
+      },
+      {
+        "waypoint_id": 2,
+        "coordinates_m": [
+          -0.6,
+          4.625
+        ],
+        "description": "Navigate along transfer path"
+      },
+      {
+        "waypoint_id": 3,
+        "coordinates_m": [
+          5.4,
+          4.625
+        ],
+        "description": "Optimal approach to pick up Package 06"
+      }
+    ]
+  }
+}

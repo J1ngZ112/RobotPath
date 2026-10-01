@@ -1,0 +1,130 @@
+{
+  "warehouse_geometry_model": {
+    "global_summary": {
+      "warehouse_size_m": {
+        "x": 12.0,
+        "y": 12.0
+      },
+      "coordinate_system_notes": "Origin at image center. X+ right, Y+ up.",
+      "total_obstacles": 4
+    },
+    "obstacles": [
+      {
+        "element_id": "Shelf-1",
+        "type": "Shelf",
+        "is_ground_truth": false,
+        "center_point_m": "[-4.5, 0.0]",
+        "dimensions_m": {
+          "length": 8.0,
+          "width": 0.6
+        },
+        "orientation_rad": 0.0,
+        "obstacle_polygon_m": [
+          [
+            -4.2,
+            4.0
+          ],
+          [
+            -4.2,
+            -4.0
+          ],
+          [
+            -4.8,
+            -4.0
+          ],
+          [
+            -4.8,
+            4.0
+          ]
+        ]
+      },
+      {
+        "element_id": "Shelf-2",
+        "type": "Shelf",
+        "is_ground_truth": false,
+        "center_point_m": "[-1.5, 0.0]",
+        "dimensions_m": {
+          "length": 8.0,
+          "width": 0.6
+        },
+        "orientation_rad": 0.0,
+        "obstacle_polygon_m": [
+          [
+            -1.2,
+            4.0
+          ],
+          [
+            -1.2,
+            -4.0
+          ],
+          [
+            -1.8,
+            -4.0
+          ],
+          [
+            -1.8,
+            4.0
+          ]
+        ]
+      },
+      {
+        "element_id": "Shelf-3",
+        "type": "Shelf",
+        "is_ground_truth": false,
+        "center_point_m": "[1.5, 0.0]",
+        "dimensions_m": {
+          "length": 8.0,
+          "width": 0.6
+        },
+        "orientation_rad": 0.0,
+        "obstacle_polygon_m": [
+          [
+            1.8,
+            4.02
+          ],
+          [
+            1.8,
+            -4.0
+          ],
+          [
+            1.2,
+            -4.0
+          ],
+          [
+            1.2,
+            4.0
+          ]
+        ]
+      },
+      {
+        "element_id": "Shelf-4",
+        "type": "Shelf",
+        "is_ground_truth": false,
+        "center_point_m": "[4.5, 0.0]",
+        "dimensions_m": {
+          "length": 8.0,
+          "width": 0.6
+        },
+        "orientation_rad": 0.0,
+        "obstacle_polygon_m": [
+          [
+            4.8,
+            4.0
+          ],
+          [
+            4.8,
+            -4.0
+          ],
+          [
+            4.2,
+            -4.0
+          ],
+          [
+            4.2,
+            4.0
+          ]
+        ]
+      }
+    ]
+  }
+}

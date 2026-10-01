@@ -1,0 +1,24 @@
+# Isaac Sim and Python generated files
+__pycache__/
+*.py[cod]
+.DS_Store
+*.log
+*.tmp
+
+# Licensed or third-party assets are distributed separately.
+data/Assets/
+data/collision_dataset/
+
+# Local Isaac Sim output and caches
+outputs/
+output/
+logs/
+cache/
+kit/cache/
+omni.cache/
+
+# Local experiment results
+Experiment/*_result.json
+Experiment/repaired_waypoint_plan.json
+Experiment/check_report.json
+

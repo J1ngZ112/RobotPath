@@ -1,0 +1,103 @@
+{
+  "pickup_plan": {
+    "pickup_sequence": [
+      {
+        "order": 1,
+        "package_id": "06"
+      }
+    ],
+    "reasoning": "With only one package in the mission, the pickup sequence is trivial. The waypoint plan is optimized by selecting the approach from the east side (Aisle 3) of Shelf-3, as it provides the shortest travel path from the robot's starting position. The path adheres to a strict 0.6m safety clearance from all obstacles. NOTE: The mission's start and drop-off positions were found to be inside obstacle or safety boundaries; the generated path navigates from/to the nearest safe access points."
+  },
+  "waypoint_plan": {
+    "waypoints": [
+      {
+        "waypoint_id": 0,
+        "coordinates_m": [
+          4.346,
+          4.666
+        ],
+        "description": "Start Position"
+      },
+      {
+        "waypoint_id": 1,
+        "coordinates_m": [
+          3.0,
+          4.666
+        ],
+        "description": "Align with center of Aisle 3"
+      },
+      {
+        "waypoint_id": 2,
+        "coordinates_m": [
+          3.0,
+          2.5
+        ],
+        "description": "Navigate south along Aisle 3 to package row"
+      },
+      {
+        "waypoint_id": 3,
+        "coordinates_m": [
+          2.4,
+          2.5
+        ],
+        "description": "Optimal approach to pick up Package 06"
+      },
+      {
+        "waypoint_id": 4,
+        "coordinates_m": [
+          3.0,
+          2.5
+        ],
+        "description": "Return to Aisle 3 center post-pickup"
+      },
+      {
+        "waypoint_id": 5,
+        "coordinates_m": [
+          3.0,
+          4.6
+        ],
+        "description": "Navigate north to top corridor (0.6m clearance)"
+      },
+      {
+        "waypoint_id": 6,
+        "coordinates_m": [
+          0.0,
+          4.6
+        ],
+        "description": "Cross top corridor to Aisle 2"
+      },
+      {
+        "waypoint_id": 7,
+        "coordinates_m": [
+          -3.0,
+          4.6
+        ],
+        "description": "Cross top corridor to Aisle 1"
+      },
+      {
+        "waypoint_id": 8,
+        "coordinates_m": [
+          -5.4,
+          4.6
+        ],
+        "description": "Enter west corridor (0.6m clearance)"
+      },
+      {
+        "waypoint_id": 9,
+        "coordinates_m": [
+          -5.4,
+          5.0
+        ],
+        "description": "Navigate to safe point near drop-off"
+      },
+      {
+        "waypoint_id": 10,
+        "coordinates_m": [
+          -5.0,
+          5.0
+        ],
+        "description": "Drop-off Position"
+      }
+    ]
+  }
+}
