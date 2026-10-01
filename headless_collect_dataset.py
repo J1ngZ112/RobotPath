@@ -12,6 +12,12 @@ def parse_args():
     parser = argparse.ArgumentParser(description="Collect STP collision data in Isaac Sim headless mode.")
     parser.add_argument("--layout", default=None, help="Layout name from Experiment/layouts.json. Defaults to the first layout.")
     parser.add_argument("--mode", choices=["astar", "file"], default="astar", help="Sequence source.")
+    parser.add_argument(
+        "--motion-mode",
+        choices=["simple", "hard"],
+        default="simple",
+        help="Waypoint motion: rotate in place before translating, or turn and translate simultaneously.",
+    )
     parser.add_argument("--num-sequences", type=int, default=300, help="Number of A* sequences to generate.")
     parser.add_argument(
         "--collision-probability",
@@ -133,6 +139,7 @@ async def run_collection(args, repo_root):
         collision_confirmation_window=args.collision_confirmation_window,
         strong_collision_impulse_threshold=args.strong_collision_impulse_threshold,
         max_recorded_contact_events=args.max_recorded_contact_events,
+        motion_mode=args.motion_mode,
     )
     if not robot_controller.initialize():
         raise RuntimeError(f"Failed to initialize robot controller for {robot_id}.")

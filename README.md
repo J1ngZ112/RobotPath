@@ -57,6 +57,13 @@ the locations encoded by the USD files.
 ./python.sh headless_collect_dataset.py --layout <layout-name> --num-sequences 10
 ```
 
+Waypoint execution supports two motion modes. `simple` (the default) rotates
+in place until the target heading is reached, then translates. `hard` updates
+translation and yaw in the same simulation step. Select the mode in the UI,
+use `--motion-mode simple|hard` for headless collection, or call
+`RobotController.set_motion_mode("hard")` / pass
+`motion_mode=` to `start_waypoint_navigation`.
+
 Use `--output-dir` to write generated results outside the repository. The
 checked-in example in `data/examples/collision_sample.json` documents the
 public data shape without containing third-party assets or a complete dataset.
@@ -124,9 +131,14 @@ Sim 中启用扩展后打开 RobotPath 窗口，选择布局并点击 **Load Sce
 ./python.sh headless_collect_dataset.py --layout <layout-name> --num-sequences 10
 ```
 
+导航执行支持两种模式：默认的 `simple` 先原地转向到目标方向再移动；`hard`
+在同一个仿真步中同时更新转向和平移。图形界面可以直接选择，headless 采集使用
+`--motion-mode simple|hard`，代码接口为 `set_motion_mode()` 或
+`start_waypoint_navigation(..., motion_mode="hard")`。采集结果中的 motion 配置
+会记录实际模式。
+
 ## 许可证
 
 仓库中的 MIT 许可证仅覆盖项目自有代码和文档，不覆盖被排除的资产或任何
 第三方内容。取得书面授权后，将通过独立资产包或新的版本标签追加资产，并在
 `NOTICE` 中记录来源、版本、许可证和完整性验证结果。
-

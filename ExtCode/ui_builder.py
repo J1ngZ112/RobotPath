@@ -62,6 +62,7 @@ class UIBuilder:
         self._window_title = window_title
         
         self._scene_manager = SceneManager(SCENE_PATH)
+        self._motion_mode = "simple"
         self._active_robot_id = "ridgeback_franka"
         self._robot_controller = RobotController()
         self._robot_controller.set_failure_callback(self.on_navigation_failed)
@@ -80,6 +81,8 @@ class UIBuilder:
         # 保存 UI 引用以防止垃圾回收
         self._layout_combo = None
         self._combo_subscription = None
+        self._motion_mode_combo = None
+        self._motion_mode_subscription = None
 
         # create menu
         if self._menu_path:
@@ -130,6 +133,7 @@ class UIBuilder:
             sensor_path=sensor_path,
             robot_width=width,
             robot_length=length,
+            motion_mode=self._motion_mode,
         )
         self._robot_controller.set_failure_callback(self.on_navigation_failed)
         self._active_robot_id = robot_id
@@ -191,6 +195,27 @@ class UIBuilder:
                                 
                                 # 4. 绑定回调并保存订阅对象
                                 self._combo_subscription = self._layout_combo.model.subscribe_item_changed_fn(on_layout_changed)
+
+                            with ui.HStack(height=22):
+                                ui.Label("Motion mode:", width=80, height=22)
+                                self._motion_mode_combo = ui.ComboBox(
+                                    0 if self._motion_mode == "simple" else 1,
+                                    "simple",
+                                    "hard",
+                                    height=22,
+                                )
+
+                                def on_motion_mode_changed(model, item):
+                                    idx = model.get_item_value_model(item, 0).as_int
+                                    self._motion_mode = "hard" if idx == 1 else "simple"
+                                    self._robot_controller.set_motion_mode(self._motion_mode)
+                                    print(f"Motion mode selected: {self._motion_mode}")
+
+                                self._motion_mode_subscription = (
+                                    self._motion_mode_combo.model.subscribe_item_changed_fn(
+                                        on_motion_mode_changed
+                                    )
+                                )
 
                             load_btn = ui_utils.btn_builder(label="Load Scene", text="LOAD", on_clicked_fn=self.load_scene)
                             reset_btn = ui_utils.btn_builder(label="Reset Scene", text="RESET", on_clicked_fn=self.reset_scene)

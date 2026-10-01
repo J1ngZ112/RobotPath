@@ -26,6 +26,7 @@ class RobotController:
         collision_confirmation_window=0.15,
         strong_collision_impulse_threshold=0.5,
         max_recorded_contact_events=20,
+        motion_mode="simple",
     ):
         self._robot_prim_path = robot_prim_path
         self._sensor_path = sensor_path or f"{robot_prim_path}/base_link/Contact_Sensor"
@@ -36,6 +37,8 @@ class RobotController:
         self._max_angular_speed = float(max_angular_speed)
         self._max_angular_acceleration = float(max_angular_acceleration)
         self._heading_tolerance = float(heading_tolerance)
+        self._motion_mode = "simple"
+        self.set_motion_mode(motion_mode)
         self._commanded_linear_speed = 0.0
         self._commanded_angular_speed = 0.0
         self._commanded_x = None
@@ -82,13 +85,24 @@ class RobotController:
         """设置导航失败时的回调函数"""
         self._on_navigation_failed = callback
 
+    def set_motion_mode(self, motion_mode):
+        """Select waypoint motion behavior: ``simple`` or simultaneous ``hard``."""
+        normalized = str(motion_mode).strip().lower()
+        if normalized not in {"simple", "hard"}:
+            raise ValueError("motion_mode must be 'simple' or 'hard'")
+        self._motion_mode = normalized
+
+    def get_motion_mode(self):
+        return self._motion_mode
+
     def set_completion_callback(self, callback):
         """Set an optional callback invoked after all waypoints are reached."""
         self._on_navigation_completed = callback
 
     def get_motion_config(self):
         return {
-            "control_mode": "rotate_then_translate_accumulated_pose_servo",
+            "control_mode": self._motion_mode,
+            "motion_mode": self._motion_mode,
             "max_linear_speed_mps": self._max_linear_speed,
             "max_linear_acceleration_mps2": self._max_linear_acceleration,
             "max_angular_speed_radps": self._max_angular_speed,
@@ -194,13 +208,16 @@ class RobotController:
         self._is_initialized = False
         print("RobotController state has been reset.")
 
-    def start_waypoint_navigation(self, waypoints):
+    def start_waypoint_navigation(self, waypoints, motion_mode=None):
         """
         开始沿给定的航点列表进行导航。
         
         Args:
             waypoints (list): 一个包含(x, y)坐标元组的列表。
+            motion_mode (str, optional): Override the configured mode for this run.
         """
+        if motion_mode is not None:
+            self.set_motion_mode(motion_mode)
         if not waypoints:
             print("Waypoints list is empty. Cannot start navigation.")
             return
@@ -379,28 +396,32 @@ class RobotController:
 
             action = ArticulationAction(joint_positions=np.full(self._robot.num_dof, np.nan))
 
-            if abs(angle_error) > self._heading_tolerance:
+            command_angle_error = self._wrap_angle(target_angle - self._commanded_yaw)
+            angular_limit = min(self._max_angular_speed, abs(command_angle_error) / dt)
+            self._commanded_angular_speed = self._approach(
+                self._commanded_angular_speed,
+                angular_limit,
+                self._max_angular_acceleration * dt,
+            )
+            angle_step = min(abs(command_angle_error), self._commanded_angular_speed * dt)
+            if angle_step > 0.0:
+                self._commanded_yaw += math.copysign(angle_step, command_angle_error)
+
+            command_delta_x = target_x - self._commanded_x
+            command_delta_y = target_y - self._commanded_y
+            command_distance = math.hypot(command_delta_x, command_delta_y)
+            if self._motion_mode == "simple" and abs(angle_error) > self._heading_tolerance:
+                # Rotate in place until the measured heading is within tolerance.
                 self._commanded_linear_speed = 0.0
-                command_angle_error = self._wrap_angle(target_angle - self._commanded_yaw)
-                angular_limit = min(self._max_angular_speed, abs(command_angle_error) / dt)
-                self._commanded_angular_speed = self._approach(
-                    self._commanded_angular_speed,
-                    angular_limit,
-                    self._max_angular_acceleration * dt,
-                )
-                angle_step = min(abs(command_angle_error), self._commanded_angular_speed * dt)
-                if angle_step > 0.0:
-                    self._commanded_yaw += math.copysign(angle_step, command_angle_error)
             else:
-                self._commanded_angular_speed = 0.0
-                self._commanded_yaw += self._wrap_angle(target_angle - self._commanded_yaw)
-                command_delta_x = target_x - self._commanded_x
-                command_delta_y = target_y - self._commanded_y
-                command_distance = math.hypot(command_delta_x, command_delta_y)
                 stopping_speed = math.sqrt(
                     max(0.0, 2.0 * self._max_linear_acceleration * command_distance)
                 )
                 desired_speed = min(self._max_linear_speed, stopping_speed)
+                if self._motion_mode == "hard":
+                    # Translation and yaw update in the same step. Reducing the
+                    # speed for a large heading error avoids commanding reverse motion.
+                    desired_speed *= max(0.0, math.cos(angle_error))
                 self._commanded_linear_speed = self._approach(
                     self._commanded_linear_speed,
                     desired_speed,
