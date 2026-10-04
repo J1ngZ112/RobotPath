@@ -1,9 +1,70 @@
 # RobotPath
 
-RobotPath is an Isaac Sim extension and experiment codebase for mobile-robot
-path planning, collision checking, replanning, and collision-data collection.
-The repository contains the project-authored Python code, layout/configuration
-examples, experiment scripts, and a small asset-free data-format example.
+**RobotPath is an Isaac Sim extension for mobile-robot path planning,
+collision checking, replanning, and collision-data collection in warehouse
+scenes.** It includes the experiment code used by the associated paper,
+baseline planners, layout files, waypoint examples, and a configurable robot
+navigation controller.
+
+![RobotPath warehouse layout](Experiment/Overview_Capture.png)
+
+> This first public release contains the project code and experiment metadata.
+> The Warehouse USD and other third-party assets are distributed separately
+> while redistribution permissions are being confirmed.
+
+## What is included
+
+- Isaac Sim extension UI for loading layouts, planning, checking, and running
+  waypoint navigation.
+- `simple` motion: rotate in place, then translate to the next waypoint.
+- `hard` motion: rotate and translate during the same simulation step.
+- Heuristic, RL, and task-and-motion planning baselines.
+- Collision monitoring and collision-data collection interfaces.
+- Layout JSON, waypoint files, experiment scenarios, and an asset-free data
+  format example.
+
+## Quick start (GUI)
+
+1. Install an Isaac Sim 4.x version compatible with the paper experiments.
+2. Obtain a licensed set of compatible Warehouse, shelf, robot, prop,
+   material, and texture assets.
+3. Point RobotPath to those assets before starting Isaac Sim:
+
+   ```bash
+   export ROBOTPATH_ASSET_ROOT=/path/to/licensed/robotpath-assets
+   export ROBOTPATH_SCENE_PATH=/path/to/licensed/robotpath-assets/Warehouse.usd
+   ```
+
+4. Open the repository as an Isaac Sim extension, enable `RobotPath` from
+   **Window > Extensions**, and open the RobotPath window.
+5. Select a layout and motion mode (`simple` or `hard`), click **Load Scene**,
+   then choose **PLAN**, **CHECK**, and **START** as needed.
+
+If the assets are missing, the extension can still be enabled, but the startup
+check will list missing USD files and the Warehouse scene will not load
+completely.
+
+## Quick start (headless)
+
+For batch collection, use Isaac Sim's Python interpreter:
+
+```bash
+./python.sh headless_collect_dataset.py \
+  --layout <layout-name> \
+  --motion-mode simple \
+  --num-sequences 10
+```
+
+Use `--motion-mode hard` to run simultaneous turn-and-translate control and
+`--output-dir` to write results outside the repository. The controller API is:
+
+```python
+robot_controller.set_motion_mode("hard")
+robot_controller.start_waypoint_navigation(waypoints)
+```
+
+See [`data/examples/collision_sample.json`](data/examples/collision_sample.json)
+for the public collision-data shape.
 
 ## Release scope
 
@@ -45,29 +106,6 @@ variables. The startup check reports the missing `Warehouse.usd`, shelf USD,
 and robot USD paths. Referenced materials and textures must also be present in
 the locations encoded by the USD files.
 
-## Run
-
-1. Open the repository as an Isaac Sim extension and enable `RobotPath` from
-   **Window > Extensions**.
-2. Set the asset variables above, open the RobotPath window, choose a layout,
-   and press **Load Scene**.
-3. For headless collection, run the Isaac Sim Python interpreter:
-
-```bash
-./python.sh headless_collect_dataset.py --layout <layout-name> --num-sequences 10
-```
-
-Waypoint execution supports two motion modes. `simple` (the default) rotates
-in place until the target heading is reached, then translates. `hard` updates
-translation and yaw in the same simulation step. Select the mode in the UI,
-use `--motion-mode simple|hard` for headless collection, or call
-`RobotController.set_motion_mode("hard")` / pass
-`motion_mode=` to `start_waypoint_navigation`.
-
-Use `--output-dir` to write generated results outside the repository. The
-checked-in example in `data/examples/collision_sample.json` documents the
-public data shape without containing third-party assets or a complete dataset.
-
 ## Repository contents
 
 - `ExtCode/`: extension, planners, controllers, collision checking, and
@@ -97,45 +135,63 @@ unless their redistribution rights are documented.
 
 # RobotPath（中文）
 
-RobotPath 是一个基于 Isaac Sim 的移动机器人路径规划、碰撞检查、重规划
-和碰撞数据采集扩展。仓库首版公开项目自有 Python 代码、布局与配置示例、
-实验脚本，以及一个不含资产的最小数据格式示例。
+**RobotPath 是一个基于 Isaac Sim 的移动机器人路径规划、碰撞检查、重规划
+和碰撞数据采集扩展，面向仓储场景中的导航实验。** 仓库包含论文相关的项目
+代码、基线规划器、布局文件、路径点示例和可配置的机器人导航控制器。
 
-## 首版发布范围
+![RobotPath 仓储布局](Experiment/Overview_Capture.png)
 
-首版采用 **仅代码** 发布，明确不包含 `data/Assets/` 和完整的
-`data/collision_dataset/`。Warehouse 场景虽然由项目作者自行拼装，但其中
-的 USD 可能引用 NVIDIA、Fab 或其他第三方的网格、机器人、材质和纹理。
-自行完成布局和组合并不会自动获得底层文件的再分发权。资产来源和授权状态
-记录在 [`docs/ASSET_MANIFEST.md`](docs/ASSET_MANIFEST.md)。
+> 首版公开代码和实验元数据。Warehouse USD 及其中可能涉及的第三方资产，
+> 在确认再分发许可前单独提供。
 
-扩展仍可能正常启用，因为 Python 模块和 UI 依赖存在；但加载 Warehouse
-必须依赖外部 USD 文件。资产目录缺失时，启动检查会列出缺失路径，场景无法
-完整加载。用户需要准备合法取得的兼容资产，或等待后续获得授权的资产版本。
+## 已包含内容
 
-## 环境与运行
+- Isaac Sim 图形扩展：加载布局、规划、检查和执行路径点导航。
+- `simple` 模式：先原地转向，再移动到下一个路径点。
+- `hard` 模式：在同一个仿真步中同时转向和平移。
+- 启发式、RL 和任务与运动规划基线。
+- 碰撞监控和碰撞数据采集接口。
+- 布局 JSON、路径点、实验场景，以及不含资产的数据格式示例。
 
-需要 Isaac Sim 4.x、Isaac Sim 自带 Python，以及一套合法取得且兼容的
-Warehouse、货架、机器人、道具、材质和纹理资产。资产不放在仓库中时设置：
+## 图形界面快速开始
+
+1. 安装与论文实验兼容的 Isaac Sim 4.x。
+2. 准备合法取得的 Warehouse、货架、机器人、道具、材质和纹理资产。
+3. 启动 Isaac Sim 前设置资产路径：
+
+   ```bash
+   export ROBOTPATH_ASSET_ROOT=/path/to/licensed/robotpath-assets
+   export ROBOTPATH_SCENE_PATH=/path/to/licensed/robotpath-assets/Warehouse.usd
+   ```
+
+4. 将仓库作为 Isaac Sim 扩展打开，在 **Window > Extensions** 中启用
+   `RobotPath`，然后打开 RobotPath 窗口。
+5. 选择布局和运动模式，点击 **Load Scene**，根据需要点击 **PLAN**、
+   **CHECK** 和 **START**。
+
+缺少资产时扩展仍可能启用，但启动检查会列出缺失的 USD 文件，Warehouse
+场景无法完整加载。
+
+## 无界面快速开始
+
+批量采集使用 Isaac Sim 自带 Python：
 
 ```bash
-export ROBOTPATH_ASSET_ROOT=/path/to/licensed/robotpath-assets
-export ROBOTPATH_SCENE_PATH=/path/to/licensed/robotpath-assets/Warehouse.usd
+./python.sh headless_collect_dataset.py \
+  --layout <layout-name> \
+  --motion-mode simple \
+  --num-sequences 10
 ```
 
-两个入口会使用相同配置：图形扩展和 `headless_collect_dataset.py`。在 Isaac
-Sim 中启用扩展后打开 RobotPath 窗口，选择布局并点击 **Load Scene**；无界面
-采集示例：
+使用 `--motion-mode hard` 启用同时转向和平移，使用 `--output-dir` 将结果
+写到仓库之外。控制器接口为：
 
-```bash
-./python.sh headless_collect_dataset.py --layout <layout-name> --num-sequences 10
+```python
+robot_controller.set_motion_mode("hard")
+robot_controller.start_waypoint_navigation(waypoints)
 ```
 
-导航执行支持两种模式：默认的 `simple` 先原地转向到目标方向再移动；`hard`
-在同一个仿真步中同时更新转向和平移。图形界面可以直接选择，headless 采集使用
-`--motion-mode simple|hard`，代码接口为 `set_motion_mode()` 或
-`start_waypoint_navigation(..., motion_mode="hard")`。采集结果中的 motion 配置
-会记录实际模式。
+公开碰撞数据格式见 [`data/examples/collision_sample.json`](data/examples/collision_sample.json)。
 
 ## 许可证
 
