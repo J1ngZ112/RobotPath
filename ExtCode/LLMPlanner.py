@@ -250,12 +250,22 @@ You MUST provide your final plan in a single, well-formed JSON object. Do not in
 #def get_replan_prompt()
 
 class LM:
-    def __init__(self, key="AIzaSyChpMrBrNV7lDFjMQv6HXGfuwI4GM4GHdY", sys_prompt=None):
+    def __init__(self, key=None, sys_prompt=None):
         if genai is None or types is None:
             raise RuntimeError(
                 "google-genai is unavailable or incompatible in Isaac Sim Python. "
                 "Please install a compatible version (recommended: google-genai<1.70)."
             ) from _GENAI_IMPORT_ERROR
+
+        # Never store provider credentials in the source tree. GOOGLE_API_KEY is
+        # the canonical name; GEMINI_API_KEY is accepted for compatibility with
+        # Google tooling and existing local setups.
+        key = key or os.environ.get("GOOGLE_API_KEY") or os.environ.get("GEMINI_API_KEY")
+        if not key:
+            raise RuntimeError(
+                "Google API key is not configured. Set GOOGLE_API_KEY (or "
+                "GEMINI_API_KEY) before using the LLM planner."
+            )
         self.client = genai.Client(api_key=key)
         self.sys_prompt = sys_prompt
         self.model_name = "gemini-2.5-pro"

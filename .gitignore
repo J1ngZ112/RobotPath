@@ -2,6 +2,8 @@
 __pycache__/
 *.py[cod]
 .DS_Store
+.env
+.env.*
 *.log
 *.tmp
 
@@ -21,4 +23,3 @@ omni.cache/
 Experiment/*_result.json
 Experiment/repaired_waypoint_plan.json
 Experiment/check_report.json
-

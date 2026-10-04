@@ -106,6 +106,20 @@ variables. The startup check reports the missing `Warehouse.usd`, shelf USD,
 and robot USD paths. Referenced materials and textures must also be present in
 the locations encoded by the USD files.
 
+## Configure the optional Gemini planner
+
+The LLM planner reads its credential from the environment and never stores a
+Google API key in the repository. Set one of the following before using the
+planner:
+
+```bash
+export GOOGLE_API_KEY=your-google-api-key
+# GEMINI_API_KEY is also accepted.
+```
+
+Do not commit `.env` files or API keys. If a key was previously exposed in a
+public commit, revoke it in Google AI Studio/Cloud and create a replacement.
+
 ## Repository contents
 
 - `ExtCode/`: extension, planners, controllers, collision checking, and
@@ -171,6 +185,19 @@ unless their redistribution rights are documented.
 
 缺少资产时扩展仍可能启用，但启动检查会列出缺失的 USD 文件，Warehouse
 场景无法完整加载。
+
+## 配置可选的 Gemini 规划器
+
+LLM 规划器只从环境变量读取凭据，不会在仓库中保存 Google API key。使用
+规划器前设置：
+
+```bash
+export GOOGLE_API_KEY=your-google-api-key
+# 也支持 GEMINI_API_KEY。
+```
+
+不要提交 `.env` 文件或 API key。如果密钥曾经出现在公开提交中，请先在
+Google AI Studio/Cloud 中撤销旧密钥，再生成新的密钥。
 
 ## 无界面快速开始
 
