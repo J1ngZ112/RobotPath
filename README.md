@@ -6,7 +6,7 @@ scenes.** It includes the experiment code used by the associated paper,
 baseline planners, layout files, waypoint examples, and a configurable robot
 navigation controller.
 
-![RobotPath warehouse layout](Experiment/Overview_Capture.png)
+![RobotPath benchmark overview](docs/RobotPath-Benchmark-Overview.png)
 
 > This first public release contains the project code and experiment metadata.
 > The Warehouse USD and other third-party assets are distributed separately
@@ -128,6 +128,8 @@ public commit, revoke it in Google AI Studio/Cloud and create a replacement.
 - `config/extension.toml`: Isaac Sim extension metadata.
 - `headless_collect_dataset.py`: headless data-collection entry point.
 - `docs/ASSET_MANIFEST.md`: asset provenance and redistribution checklist.
+- `docs/RobotPath-1.pdf`: RobotPath-Bench dataset and evaluation protocol.
+- `docs/RobotPath-2.pdf`: LLM-RobotPath system overview.
 
 ## Asset authorization and later releases
 
@@ -141,9 +143,11 @@ only; it does not license excluded or third-party assets.
 
 ## Citation and support
 
-Please cite the associated paper when using RobotPath in research. Issues and
-pull requests are welcome for code and documentation; do not upload assets
-unless their redistribution rights are documented.
+The project papers are available in [`docs/RobotPath-1.pdf`](docs/RobotPath-1.pdf)
+and [`docs/RobotPath-2.pdf`](docs/RobotPath-2.pdf). Please cite the associated
+paper when using RobotPath in research. Issues and pull requests are welcome
+for code and documentation; do not upload assets unless their redistribution
+rights are documented.
 
 ---
 
@@ -153,7 +157,7 @@ unless their redistribution rights are documented.
 和碰撞数据采集扩展，面向仓储场景中的导航实验。** 仓库包含论文相关的项目
 代码、基线规划器、布局文件、路径点示例和可配置的机器人导航控制器。
 
-![RobotPath 仓储布局](Experiment/Overview_Capture.png)
+![RobotPath 基准与评测概览](docs/RobotPath-Benchmark-Overview.png)
 
 > 首版公开代码和实验元数据。Warehouse USD 及其中可能涉及的第三方资产，
 > 在确认再分发许可前单独提供。
@@ -166,6 +170,11 @@ unless their redistribution rights are documented.
 - 启发式、RL 和任务与运动规划基线。
 - 碰撞监控和碰撞数据采集接口。
 - 布局 JSON、路径点、实验场景，以及不含资产的数据格式示例。
+
+论文和图示：
+
+- [`docs/RobotPath-1.pdf`](docs/RobotPath-1.pdf)：RobotPath-Bench 数据集与评测协议。
+- [`docs/RobotPath-2.pdf`](docs/RobotPath-2.pdf)：LLM-RobotPath 系统概览。
 
 ## 图形界面快速开始
 
