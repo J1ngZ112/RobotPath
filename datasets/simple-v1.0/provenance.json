@@ -1,0 +1,165 @@
+{
+  "release": "simple-v1.0",
+  "schema_version": 1,
+  "records": 7030,
+  "collisions": 4745,
+  "excluded_records": 170,
+  "splits": {
+    "train": {
+      "records": 4903,
+      "collision": 3273
+    },
+    "validation": {
+      "records": 610,
+      "collision": 408
+    },
+    "test": {
+      "records": 617,
+      "collision": 411
+    },
+    "layout_transfer": {
+      "records": 300,
+      "collision": 216
+    },
+    "joint_transfer": {
+      "records": 300,
+      "collision": 230
+    },
+    "robot_transfer": {
+      "records": 300,
+      "collision": 207
+    }
+  },
+  "source_batches": [
+    {
+      "batch_id": "batch_077364f85532015d8adf",
+      "sha256": "4c90805c2e8da9cea593cd4a137c4092d11501bd2a8bc19d2e5029cfaa3e9b13",
+      "raw_records": 300
+    },
+    {
+      "batch_id": "batch_aa1d4ed0308348352068",
+      "sha256": "acb3bbb37948869c801dd1d39166d8556b47230b9e750ed4b5d863f4482cdb3f",
+      "raw_records": 300
+    },
+    {
+      "batch_id": "batch_284261f941c57ff9fbcc",
+      "sha256": "3b53215941fdcbaae0891cf467f02a179205e4c234faf026214491679b613134",
+      "raw_records": 300
+    },
+    {
+      "batch_id": "batch_0b8ade97418581886e34",
+      "sha256": "5d4fbf49c3f7b7fd98a98e0ae9de6cecda5f3198f1424b601cfbc2afc4eb3104",
+      "raw_records": 300
+    },
+    {
+      "batch_id": "batch_60602bb579fa3aec9f2d",
+      "sha256": "24d948f72fb19b54fbddce99bade8d69ba6a946b33c7d7b54b3d8f81bf92910a",
+      "raw_records": 300
+    },
+    {
+      "batch_id": "batch_5800788b6e65e6f7ef5c",
+      "sha256": "959392f89b4a3982b732439ce3a34142516abaa27952603fcf6bb93a79f17a8e",
+      "raw_records": 300
+    },
+    {
+      "batch_id": "batch_6d246359f3e16d781ca2",
+      "sha256": "daa87e53ca7efaee36dcbd8fdf76cb89991faa285548c7760898be5b5abce0b5",
+      "raw_records": 300
+    },
+    {
+      "batch_id": "batch_5c80bec6a8af62a497c8",
+      "sha256": "f62b36300fb2312eefc21f4cb8954e0ee61ce6b7d09ec95f50a65569112207f4",
+      "raw_records": 300
+    },
+    {
+      "batch_id": "batch_3a1b212fe3a94c4f2f09",
+      "sha256": "4ddf807592f21fceb5e7652cf8d3b2b785df2405562c358777adda6c6b4e03fd",
+      "raw_records": 300
+    },
+    {
+      "batch_id": "batch_c36a23cf80d78a836c62",
+      "sha256": "c9dae656869b67498c830d16d920832f54618dacf97cb9c8b6182c9056b73834",
+      "raw_records": 300
+    },
+    {
+      "batch_id": "batch_40b3ba2f9e84b0942239",
+      "sha256": "d1f7d9038a1482a4ba0c288fcbc5079d3ea912fc2cc052dadec847d5ed4e4e22",
+      "raw_records": 300
+    },
+    {
+      "batch_id": "batch_576b5656dde40e02084d",
+      "sha256": "5a25e7985e88a555e90762a06e4fd04cfc18452ba0db87ff3e2dd72c345f031a",
+      "raw_records": 300
+    },
+    {
+      "batch_id": "batch_6c891a82a418600b6ed0",
+      "sha256": "3e36e0f56f38f8be5072151dfa8f78c3a4ff8e925c0e59c761e899d127a5452c",
+      "raw_records": 300
+    },
+    {
+      "batch_id": "batch_b5f6e01b0dbb838e59f4",
+      "sha256": "b676f4f9857cf54cb27ef9a63c00dbe1f9421576f8da4d9b763b8689c9a91cf3",
+      "raw_records": 300
+    },
+    {
+      "batch_id": "batch_6ee7ef34e35790785f59",
+      "sha256": "263f4dd8913ddf1988771bcccb1c0f5301700385cf875ef7dd8f85bc9dd0418a",
+      "raw_records": 300
+    },
+    {
+      "batch_id": "batch_8e45aa1336dcb75d7bcd",
+      "sha256": "a0657534035e381f16840a990332e176d5a1737933c8a0fa59617858e3ac444d",
+      "raw_records": 300
+    },
+    {
+      "batch_id": "batch_09260d26f643576494de",
+      "sha256": "490de07dff8be75b88bc70c361791ea856dea678ce0e761c5f8ce8aadb71ebff",
+      "raw_records": 300
+    },
+    {
+      "batch_id": "batch_b7c1db4b9f2842e7eed3",
+      "sha256": "30da196d48343cd6e1ef3ae1446078739ff8ed3b212b70b3651b6cc3d0602890",
+      "raw_records": 300
+    },
+    {
+      "batch_id": "batch_ca8f1a11cba60f2a7030",
+      "sha256": "3cb4b80088646f33c0996b744046c675099e104244ca7f03fcbda38cd6e85f40",
+      "raw_records": 300
+    },
+    {
+      "batch_id": "batch_abeac9cc5f02864bcde2",
+      "sha256": "57b8dc288f5afa01f181d3193ec4eb0ab2c67715b748bad9dc1da6316c52f410",
+      "raw_records": 300
+    },
+    {
+      "batch_id": "batch_222d064efa077c8c01b7",
+      "sha256": "51fc0d0889bc7b78bd6f0741aa903cc1e12385a99027465dc1c81ba91ce3cf6b",
+      "raw_records": 300
+    },
+    {
+      "batch_id": "batch_008b53af22b451543cee",
+      "sha256": "eb9a9e1a2a3bbb3e61b5c63c681433e8bdc5be4a0e10a8068c9200b468996416",
+      "raw_records": 300
+    },
+    {
+      "batch_id": "batch_f892f2f367e3084eccd2",
+      "sha256": "ca58287b8bbc1e8a1ece60e4f97ff4b8dac9f580c98468244eb676f07ab40fbe",
+      "raw_records": 300
+    },
+    {
+      "batch_id": "batch_f7ab642d67347fea85d9",
+      "sha256": "3425683ab4eef13f8f6ad297874051ec239f051f1ec29cd7219ad8286a61d934",
+      "raw_records": 300
+    }
+  ],
+  "motion_control_mode": "rotate_then_translate_accumulated_pose_servo",
+  "annotation_validation": "Confirmed correct by the dataset author; export checks do not rerun simulation.",
+  "geometry_permission": "Author confirmed redistribution permission on 2026-11-07; supporting evidence to be supplied.",
+  "transformations": [
+    "Stable SHA-256-derived sample IDs; internal source mapping retained locally only.",
+    "Original numeric paths, footprints, obstacle polygons and positive labels preserved.",
+    "Negative collision-only fields normalized to null.",
+    "USD files, 3D hulls, per-part colliders, runtime diagnostics, generation hints and trajectories omitted."
+  ],
+  "split_policy": "Existing fixed main split preserved; three separate transfer tests; no new random split."
+}

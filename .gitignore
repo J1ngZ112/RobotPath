@@ -23,3 +23,6 @@ omni.cache/
 Experiment/*_result.json
 Experiment/repaired_waypoint_plan.json
 Experiment/check_report.json
+
+# Private model, training code and local release provenance
+LLM-RobotPath/

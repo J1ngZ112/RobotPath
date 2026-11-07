@@ -1,0 +1,782 @@
+[
+  {
+    "path": "LLM-RobotPath/collision_dataset/Hard/collision_sequences_final_20260604_154321.json",
+    "sha256": "05ae10dea49d254d43847ef2f5b64f71b0dd0da8c2c06e7eea0cbd5c49cc37a3",
+    "bytes": 686752,
+    "group": "Hard",
+    "records": 300,
+    "collisions": 211,
+    "mode": null
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/Hard/collision_sequences_final_20260605_131635.json",
+    "sha256": "bd77562d813183eb287275ea6ae8f5fab40f863e003354826c8c74ca0a4078be",
+    "bytes": 683891,
+    "group": "Hard",
+    "records": 300,
+    "collisions": 217,
+    "mode": null
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/Hard/collision_sequences_final_20260605_141151.json",
+    "sha256": "15efbd98c7f14133134e8bfd2c051b830f7b81d64979e7c57e4dd6d523fc33ca",
+    "bytes": 676299,
+    "group": "Hard",
+    "records": 300,
+    "collisions": 207,
+    "mode": null
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/Hard/collision_sequences_final_20260606_101234.json",
+    "sha256": "da49d858a2cf6b5253644c2246667a05f44db50c89c9e527426d204759dedecc",
+    "bytes": 687396,
+    "group": "Hard",
+    "records": 300,
+    "collisions": 217,
+    "mode": null
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/Hard/collision_sequences_final_20260606_165645.json",
+    "sha256": "8febe7f2079b58ef2b695a27b5bd4131c17921e2f9987212521ad0778a80c44c",
+    "bytes": 625382,
+    "group": "Hard",
+    "records": 300,
+    "collisions": 265,
+    "mode": null
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/Hard/collision_sequences_final_20260607_094423.json",
+    "sha256": "45ec202e4880556d406cf57075091c8994fa338abd21a8af31f23af9435cb634",
+    "bytes": 627186,
+    "group": "Hard",
+    "records": 300,
+    "collisions": 274,
+    "mode": null
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/Hard/collision_sequences_final_20260607_100910.json",
+    "sha256": "c3ad5914279fbe6e01b064e21c7b9866bba6c4f1f9a3ab614e857596174a39aa",
+    "bytes": 685728,
+    "group": "Hard",
+    "records": 300,
+    "collisions": 210,
+    "mode": null
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/Hard/collision_sequences_final_20260608_093132.json",
+    "sha256": "3179f396fd7a48335fd30e36c8c6547259b85fec41d047a0c8f0367b499b89ac",
+    "bytes": 672038,
+    "group": "Hard",
+    "records": 300,
+    "collisions": 197,
+    "mode": null
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/Hard/collision_sequences_final_20260608_155650.json",
+    "sha256": "344da4e08ee2e4b9a882813ee3eecc588315e5c00a8dbe43e0b799b49285010c",
+    "bytes": 682761,
+    "group": "Hard",
+    "records": 300,
+    "collisions": 212,
+    "mode": null
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/Hard/collision_sequences_final_20260608_234047.json",
+    "sha256": "040539b12f7a255f44355c15ac5587f143e11c703ea687ac71ad7e89b3ff53cd",
+    "bytes": 688714,
+    "group": "Hard",
+    "records": 300,
+    "collisions": 211,
+    "mode": null
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/Hard/collision_sequences_final_20260609_140213.json",
+    "sha256": "bcdcb9510c4b037f07af02791205f3d2f9e0e27ea64f4c11e0fa35c23f8b6a94",
+    "bytes": 616863,
+    "group": "Hard",
+    "records": 300,
+    "collisions": 269,
+    "mode": null
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/Hard/collision_sequences_final_20260610_163007.json",
+    "sha256": "e8308aa6a5b822515777d50c7142e5c50068c9a031f57a6381e9844b72fe374b",
+    "bytes": 666829,
+    "group": "Hard",
+    "records": 300,
+    "collisions": 122,
+    "mode": null
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/Hard/collision_sequences_final_20260611_135558.json",
+    "sha256": "439c83dd8b3640659a7c5e6c038de2364edbe1c19deeebd55d9c768985812560",
+    "bytes": 663191,
+    "group": "Hard",
+    "records": 300,
+    "collisions": 139,
+    "mode": null
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/Hard/collision_sequences_final_20260612_094222.json",
+    "sha256": "46ab1b67db04f4f897c93999a40746abf78ad84387576ccbdfcf0d5c6fb49956",
+    "bytes": 613541,
+    "group": "Hard",
+    "records": 300,
+    "collisions": 236,
+    "mode": null
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/Hard/collision_sequences_final_20260612_142138.json",
+    "sha256": "e33547f806ff717d14f4f9ddb0e08b5beba1070e748204c59a809bc6426cfa7b",
+    "bytes": 631171,
+    "group": "Hard",
+    "records": 300,
+    "collisions": 266,
+    "mode": null
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/Hard/collision_sequences_final_20260613_103724.json",
+    "sha256": "84ab0d99766dc84ed00a90b76553e80f74b8f1c743ea09a67825ccf56506a4af",
+    "bytes": 656645,
+    "group": "Hard",
+    "records": 300,
+    "collisions": 142,
+    "mode": null
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/Hard/collision_sequences_final_20260614_131401.json",
+    "sha256": "6250048420321364c8070d2d00865aeda3573f422afc90e1ff1889a8b586fc5c",
+    "bytes": 641730,
+    "group": "Hard",
+    "records": 300,
+    "collisions": 109,
+    "mode": null
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/Hard/collision_sequences_final_20260614_133020.json",
+    "sha256": "9d8ee52710cef4b8991ed8fb9dd6f54518624604e967973dd38476a9aa51edde",
+    "bytes": 632232,
+    "group": "Hard",
+    "records": 300,
+    "collisions": 246,
+    "mode": null
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/Hard/collision_sequences_final_20260622_231221.json",
+    "sha256": "4cdf397edc9d7a72253613bc81740cd66a0a7cd5d752f7294ca9c49ed4a7aa3e",
+    "bytes": 678789,
+    "group": "Hard",
+    "records": 300,
+    "collisions": 149,
+    "mode": null
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/Hard/collision_sequences_final_20260623_183233.json",
+    "sha256": "96841ce84877e61a5ebbcd7441b0efb2f5d954105871d7d1f3100dd1e5d126b5",
+    "bytes": 663217,
+    "group": "Hard",
+    "records": 300,
+    "collisions": 136,
+    "mode": null
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/Hard/collision_sequences_final_20260623_213432.json",
+    "sha256": "0ba4db8562caedb3241738720f3fa6b9622fbe342bce3de99f867ae7e3a9cdb6",
+    "bytes": 626934,
+    "group": "Hard",
+    "records": 300,
+    "collisions": 228,
+    "mode": null
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/Hard/collision_sequences_final_20260624_143034.json",
+    "sha256": "93e1ad4063bea6017c97bd652494733942a02d6c04f33ead501a08cd6cf91026",
+    "bytes": 665946,
+    "group": "Hard",
+    "records": 300,
+    "collisions": 149,
+    "mode": null
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/Hard/collision_sequences_final_20260625_105604.json",
+    "sha256": "4b3185ff2452e47a346bd6a841dd397b00bb608a4fa363cfae6894a7c9ef5dae",
+    "bytes": 668530,
+    "group": "Hard",
+    "records": 300,
+    "collisions": 138,
+    "mode": null
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/Hard/collision_sequences_final_20260626_085321.json",
+    "sha256": "e84d8327cfa203cd29aa2fe7ca3d293b2bd40d8a52210ba564cb89823457c975",
+    "bytes": 611520,
+    "group": "Hard",
+    "records": 300,
+    "collisions": 237,
+    "mode": null
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/Hard/collision_sequences_final_20260627_103303.json",
+    "sha256": "71d58dc62e3e4a5c1016d84e8d121602ee230a63c48f6808d61460061ceab3e0",
+    "bytes": 683047,
+    "group": "Hard",
+    "records": 300,
+    "collisions": 207,
+    "mode": null
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/Hard/collision_sequences_final_20260627_235251.json",
+    "sha256": "b48e58bb5ecbbdf8500fcb342a276d472d1d5936ca377fb8764676c92d36dcd0",
+    "bytes": 686108,
+    "group": "Hard",
+    "records": 300,
+    "collisions": 215,
+    "mode": null
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/Hard/collision_sequences_final_20260628_205542.json",
+    "sha256": "18cfd7ee836d8ee7524a5aa607048a5c23c50d4eadcc9e2c4a3ff796c80efaf8",
+    "bytes": 674542,
+    "group": "Hard",
+    "records": 300,
+    "collisions": 202,
+    "mode": null
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/Hard/collision_sequences_final_20260629_092406.json",
+    "sha256": "5bdab24729b4bb7bd6de7d89f042b2f6e310740f1551a70a5ba430a6d555cab4",
+    "bytes": 690124,
+    "group": "Hard",
+    "records": 300,
+    "collisions": 218,
+    "mode": null
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/Hard/collision_sequences_final_20260629_234046.json",
+    "sha256": "9946a97a5f99068443d8cd9155296c24c15fd18d931bd47d8247188adfd8b435",
+    "bytes": 692626,
+    "group": "Hard",
+    "records": 300,
+    "collisions": 226,
+    "mode": null
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/Hard/collision_sequences_final_20260630_102241.json",
+    "sha256": "053ae3dad5742717a76f587311ca012f78be39a884095215fc427d55a5261d82",
+    "bytes": 624372,
+    "group": "Hard",
+    "records": 300,
+    "collisions": 260,
+    "mode": null
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/Hard/collision_sequences_final_20260701_003737.json",
+    "sha256": "efbea7e857af21b64b0b994c72160d8e44075f853aa61c1bf77cd391bf4320e3",
+    "bytes": 623920,
+    "group": "Hard",
+    "records": 300,
+    "collisions": 268,
+    "mode": null
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/Hard/collision_sequences_final_20260705_134329.json",
+    "sha256": "fbd7ee8eca4e89b820bfa74369116b4c03faecbf22ad5bfca291a315a02f1aaa",
+    "bytes": 677749,
+    "group": "Hard",
+    "records": 300,
+    "collisions": 197,
+    "mode": null
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/Hard/collision_sequences_final_20260706_105235.json",
+    "sha256": "90460a288612677246f52fd9a217474aa4e777f8f7da35eb24fadf88738eea9f",
+    "bytes": 683538,
+    "group": "Hard",
+    "records": 300,
+    "collisions": 204,
+    "mode": null
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/Hard/collision_sequences_final_20260707_003513.json",
+    "sha256": "40e65374135664c6684b881ef4cd614e963e65b0cb48bc620df370ceacb22625",
+    "bytes": 679124,
+    "group": "Hard",
+    "records": 300,
+    "collisions": 211,
+    "mode": null
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/Hard/collision_sequences_final_20260707_154843.json",
+    "sha256": "2d8fe248ada1b6a37d2501a9f9ba84b94d85b3b37d359d4420ed1933ebeb4878",
+    "bytes": 684408,
+    "group": "Hard",
+    "records": 300,
+    "collisions": 215,
+    "mode": null
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/Hard/collision_sequences_final_20260708_162019.json",
+    "sha256": "695885c3d79dda710cc2ad9cebb1a625067e11c74cd039d31e7460f9a5f28d93",
+    "bytes": 636959,
+    "group": "Hard",
+    "records": 300,
+    "collisions": 271,
+    "mode": null
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/Hard/collision_sequences_final_20260710_000333.json",
+    "sha256": "2434ac8f08adac4b7ec8a6203a204401cda1ad35bcc924526ad6719e297675e4",
+    "bytes": 624020,
+    "group": "Hard",
+    "records": 299,
+    "collisions": 272,
+    "mode": null
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/Hard/collision_sequences_final_20260710_094245.json",
+    "sha256": "1213053fa59349e77cab17134e7f50f947870803dca90cf0dbb4d8aab8cfdd53",
+    "bytes": 674871,
+    "group": "Hard",
+    "records": 300,
+    "collisions": 202,
+    "mode": null
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/Hard/collision_sequences_final_20260711_113801.json",
+    "sha256": "9b2f2679699a4d5a5c58ad95dc45fab34806abb90ac7356f24a24b3fe958d331",
+    "bytes": 683060,
+    "group": "Hard",
+    "records": 300,
+    "collisions": 217,
+    "mode": null
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/Hard/collision_sequences_final_20260712_001331.json",
+    "sha256": "5c0fa7ffa00650d3f247e989833cbfc6441ec8a965a9e26819471fa7b2f88ef4",
+    "bytes": 632961,
+    "group": "Hard",
+    "records": 300,
+    "collisions": 267,
+    "mode": null
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/Hard/unseen_test/collision_sequences_final_20260721_233858.json",
+    "sha256": "c5093bd232a21a97b5d878d0659d8b6f1903147a371fba6664c45fd176309081",
+    "bytes": 666331,
+    "group": "Hard/unseen_test",
+    "records": 300,
+    "collisions": 164,
+    "mode": null
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/Hard/unseen_test/collision_sequences_final_20260729_124253.json",
+    "sha256": "62168fa524abeb66c25bb4de1d3cde49dd64633b0aa81876f957d4cd937596df",
+    "bytes": 717731,
+    "group": "Hard/unseen_test",
+    "records": 300,
+    "collisions": 223,
+    "mode": null
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/Hard/unseen_test/collision_sequences_final_20260730_110811.json",
+    "sha256": "c13b993da92603e25563d07fc0f5ed51aada4abb18506d117c8147d48cac3ef4",
+    "bytes": 732237,
+    "group": "Hard/unseen_test",
+    "records": 300,
+    "collisions": 245,
+    "mode": null
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/Hard/unseen_test/collision_sequences_final_20260731_125238.json",
+    "sha256": "a74f9d0af3cc1d8e38fd0e6411e8aa3d11ce54b718f698719c739369a899b688",
+    "bytes": 679361,
+    "group": "Hard/unseen_test",
+    "records": 300,
+    "collisions": 108,
+    "mode": null
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/Unseen/collision_sequences_final_20260821_120455.json",
+    "sha256": "4c90805c2e8da9cea593cd4a137c4092d11501bd2a8bc19d2e5029cfaa3e9b13",
+    "bytes": 10593554,
+    "group": "Unseen",
+    "records": 300,
+    "collisions": 216,
+    "mode": "rotate_then_translate_accumulated_pose_servo",
+    "layout_hash": "15b397a6e115040e9618fb7d0aa6052006ed28f3cb23ed058e7c03b08058206d",
+    "robot": "ridgeback",
+    "metadata_count_matches": true,
+    "asset_geometry": {
+      "robot_hull": true,
+      "collider_obstacles": 2
+    }
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/Unseen/collision_sequences_final_20260824_123844.json",
+    "sha256": "acb3bbb37948869c801dd1d39166d8556b47230b9e750ed4b5d863f4482cdb3f",
+    "bytes": 10423906,
+    "group": "Unseen",
+    "records": 300,
+    "collisions": 230,
+    "mode": "rotate_then_translate_accumulated_pose_servo",
+    "layout_hash": "15b397a6e115040e9618fb7d0aa6052006ed28f3cb23ed058e7c03b08058206d",
+    "robot": "square_robo",
+    "metadata_count_matches": true,
+    "asset_geometry": {
+      "robot_hull": true,
+      "collider_obstacles": 2
+    }
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/Unseen/collision_sequences_final_20260825_005353.json",
+    "sha256": "3b53215941fdcbaae0891cf467f02a179205e4c234faf026214491679b613134",
+    "bytes": 11442576,
+    "group": "Unseen",
+    "records": 300,
+    "collisions": 207,
+    "mode": "rotate_then_translate_accumulated_pose_servo",
+    "layout_hash": "26025d54b95fb61581bec3a7da052ad1edd1bcdbbcfaa591eea7debe9a77acf4",
+    "robot": "square_robo",
+    "metadata_count_matches": true,
+    "asset_geometry": {
+      "robot_hull": true,
+      "collider_obstacles": 4
+    }
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/collision_sequences_final_20260807_164648.json",
+    "sha256": "5d4fbf49c3f7b7fd98a98e0ae9de6cecda5f3198f1424b601cfbc2afc4eb3104",
+    "bytes": 51524863,
+    "group": ".",
+    "records": 300,
+    "collisions": 200,
+    "mode": "rotate_then_translate_accumulated_pose_servo",
+    "layout_hash": "26025d54b95fb61581bec3a7da052ad1edd1bcdbbcfaa591eea7debe9a77acf4",
+    "robot": "rect_robo",
+    "metadata_count_matches": true,
+    "asset_geometry": {
+      "robot_hull": true,
+      "collider_obstacles": 0
+    }
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/collision_sequences_final_20260809_191009.json",
+    "sha256": "24d948f72fb19b54fbddce99bade8d69ba6a946b33c7d7b54b3d8f81bf92910a",
+    "bytes": 11130112,
+    "group": ".",
+    "records": 300,
+    "collisions": 198,
+    "mode": "rotate_then_translate_accumulated_pose_servo",
+    "layout_hash": "26025d54b95fb61581bec3a7da052ad1edd1bcdbbcfaa591eea7debe9a77acf4",
+    "robot": "rect_robo",
+    "metadata_count_matches": true,
+    "asset_geometry": {
+      "robot_hull": true,
+      "collider_obstacles": 0
+    }
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/collision_sequences_final_20260810_091501.json",
+    "sha256": "959392f89b4a3982b732439ce3a34142516abaa27952603fcf6bb93a79f17a8e",
+    "bytes": 10585416,
+    "group": ".",
+    "records": 300,
+    "collisions": 211,
+    "mode": "rotate_then_translate_accumulated_pose_servo",
+    "layout_hash": "22b0c04fee1a193ec34857bf751524aab726b927cb3017213356611aa306a6b7",
+    "robot": "rect_robo",
+    "metadata_count_matches": true,
+    "asset_geometry": {
+      "robot_hull": true,
+      "collider_obstacles": 0
+    }
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/collision_sequences_final_20260810_222324.json",
+    "sha256": "daa87e53ca7efaee36dcbd8fdf76cb89991faa285548c7760898be5b5abce0b5",
+    "bytes": 10803406,
+    "group": ".",
+    "records": 300,
+    "collisions": 199,
+    "mode": "rotate_then_translate_accumulated_pose_servo",
+    "layout_hash": "ba3593bb2f6ed1f606b73ef08e99dca54edef22f6168ffe3fb99115dc4837c64",
+    "robot": "rect_robo",
+    "metadata_count_matches": true,
+    "asset_geometry": {
+      "robot_hull": true,
+      "collider_obstacles": 0
+    }
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/collision_sequences_final_20260811_125523.json",
+    "sha256": "f62b36300fb2312eefc21f4cb8954e0ee61ce6b7d09ec95f50a65569112207f4",
+    "bytes": 10672921,
+    "group": ".",
+    "records": 300,
+    "collisions": 206,
+    "mode": "rotate_then_translate_accumulated_pose_servo",
+    "layout_hash": "9050d1a1e4572aeac67a6b412ca791b7668a7866c2984d92c7e04cc9508d3064",
+    "robot": "rect_robo",
+    "metadata_count_matches": true,
+    "asset_geometry": {
+      "robot_hull": true,
+      "collider_obstacles": 0
+    }
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/collision_sequences_final_20260812_003307.json",
+    "sha256": "4ddf807592f21fceb5e7652cf8d3b2b785df2405562c358777adda6c6b4e03fd",
+    "bytes": 10505560,
+    "group": ".",
+    "records": 300,
+    "collisions": 193,
+    "mode": "rotate_then_translate_accumulated_pose_servo",
+    "layout_hash": "d9bc88a927e7d760a74b50e0be96757aca8fa45c6832fe7c12c8a737500f3c63",
+    "robot": "rect_robo",
+    "metadata_count_matches": true,
+    "asset_geometry": {
+      "robot_hull": true,
+      "collider_obstacles": 0
+    }
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/collision_sequences_final_20260812_131208.json",
+    "sha256": "c9dae656869b67498c830d16d920832f54618dacf97cb9c8b6182c9056b73834",
+    "bytes": 9962769,
+    "group": ".",
+    "records": 300,
+    "collisions": 205,
+    "mode": "rotate_then_translate_accumulated_pose_servo",
+    "layout_hash": "49d6fc646b418b4556e0af9db3d2d06d2361a256f5e0913166dcf9e6b3c9eaf8",
+    "robot": "rect_robo",
+    "metadata_count_matches": true,
+    "asset_geometry": {
+      "robot_hull": true,
+      "collider_obstacles": 0
+    }
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/collision_sequences_final_20260812_193540.json",
+    "sha256": "d1f7d9038a1482a4ba0c288fcbc5079d3ea912fc2cc052dadec847d5ed4e4e22",
+    "bytes": 11879445,
+    "group": ".",
+    "records": 300,
+    "collisions": 146,
+    "mode": "rotate_then_translate_accumulated_pose_servo",
+    "layout_hash": "26025d54b95fb61581bec3a7da052ad1edd1bcdbbcfaa591eea7debe9a77acf4",
+    "robot": "cyli_robo",
+    "metadata_count_matches": true,
+    "asset_geometry": {
+      "robot_hull": true,
+      "collider_obstacles": 0
+    }
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/collision_sequences_final_20260813_120317.json",
+    "sha256": "5a25e7985e88a555e90762a06e4fd04cfc18452ba0db87ff3e2dd72c345f031a",
+    "bytes": 11494215,
+    "group": ".",
+    "records": 300,
+    "collisions": 159,
+    "mode": "rotate_then_translate_accumulated_pose_servo",
+    "layout_hash": "26025d54b95fb61581bec3a7da052ad1edd1bcdbbcfaa591eea7debe9a77acf4",
+    "robot": "cyli_robo",
+    "metadata_count_matches": true,
+    "asset_geometry": {
+      "robot_hull": true,
+      "collider_obstacles": 0
+    }
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/collision_sequences_final_20260814_013615.json",
+    "sha256": "3e36e0f56f38f8be5072151dfa8f78c3a4ff8e925c0e59c761e899d127a5452c",
+    "bytes": 11540884,
+    "group": ".",
+    "records": 300,
+    "collisions": 170,
+    "mode": "rotate_then_translate_accumulated_pose_servo",
+    "layout_hash": "22b0c04fee1a193ec34857bf751524aab726b927cb3017213356611aa306a6b7",
+    "robot": "cyli_robo",
+    "metadata_count_matches": true,
+    "asset_geometry": {
+      "robot_hull": true,
+      "collider_obstacles": 4
+    }
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/collision_sequences_final_20260814_152024.json",
+    "sha256": "b676f4f9857cf54cb27ef9a63c00dbe1f9421576f8da4d9b763b8689c9a91cf3",
+    "bytes": 12712312,
+    "group": ".",
+    "records": 300,
+    "collisions": 173,
+    "mode": "rotate_then_translate_accumulated_pose_servo",
+    "layout_hash": "ba3593bb2f6ed1f606b73ef08e99dca54edef22f6168ffe3fb99115dc4837c64",
+    "robot": "cyli_robo",
+    "metadata_count_matches": true,
+    "asset_geometry": {
+      "robot_hull": true,
+      "collider_obstacles": 4
+    }
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/collision_sequences_final_20260815_013056.json",
+    "sha256": "263f4dd8913ddf1988771bcccb1c0f5301700385cf875ef7dd8f85bc9dd0418a",
+    "bytes": 12346884,
+    "group": ".",
+    "records": 300,
+    "collisions": 172,
+    "mode": "rotate_then_translate_accumulated_pose_servo",
+    "layout_hash": "9050d1a1e4572aeac67a6b412ca791b7668a7866c2984d92c7e04cc9508d3064",
+    "robot": "cyli_robo",
+    "metadata_count_matches": true,
+    "asset_geometry": {
+      "robot_hull": true,
+      "collider_obstacles": 3
+    }
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/collision_sequences_final_20260815_132121.json",
+    "sha256": "a0657534035e381f16840a990332e176d5a1737933c8a0fa59617858e3ac444d",
+    "bytes": 10314476,
+    "group": ".",
+    "records": 300,
+    "collisions": 189,
+    "mode": "rotate_then_translate_accumulated_pose_servo",
+    "layout_hash": "49d6fc646b418b4556e0af9db3d2d06d2361a256f5e0913166dcf9e6b3c9eaf8",
+    "robot": "cyli_robo",
+    "metadata_count_matches": true,
+    "asset_geometry": {
+      "robot_hull": true,
+      "collider_obstacles": 1
+    }
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/collision_sequences_final_20260816_145443.json",
+    "sha256": "490de07dff8be75b88bc70c361791ea856dea678ce0e761c5f8ce8aadb71ebff",
+    "bytes": 11649756,
+    "group": ".",
+    "records": 300,
+    "collisions": 176,
+    "mode": "rotate_then_translate_accumulated_pose_servo",
+    "layout_hash": "d9bc88a927e7d760a74b50e0be96757aca8fa45c6832fe7c12c8a737500f3c63",
+    "robot": "cyli_robo",
+    "metadata_count_matches": true,
+    "asset_geometry": {
+      "robot_hull": true,
+      "collider_obstacles": 2
+    }
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/collision_sequences_final_20260817_011253.json",
+    "sha256": "30da196d48343cd6e1ef3ae1446078739ff8ed3b212b70b3651b6cc3d0602890",
+    "bytes": 11893567,
+    "group": ".",
+    "records": 300,
+    "collisions": 212,
+    "mode": "rotate_then_translate_accumulated_pose_servo",
+    "layout_hash": "26025d54b95fb61581bec3a7da052ad1edd1bcdbbcfaa591eea7debe9a77acf4",
+    "robot": "ridgeback",
+    "metadata_count_matches": true,
+    "asset_geometry": {
+      "robot_hull": true,
+      "collider_obstacles": 4
+    }
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/collision_sequences_final_20260817_115654.json",
+    "sha256": "3cb4b80088646f33c0996b744046c675099e104244ca7f03fcbda38cd6e85f40",
+    "bytes": 12215096,
+    "group": ".",
+    "records": 300,
+    "collisions": 196,
+    "mode": "rotate_then_translate_accumulated_pose_servo",
+    "layout_hash": "22b0c04fee1a193ec34857bf751524aab726b927cb3017213356611aa306a6b7",
+    "robot": "ridgeback",
+    "metadata_count_matches": true,
+    "asset_geometry": {
+      "robot_hull": true,
+      "collider_obstacles": 4
+    }
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/collision_sequences_final_20260818_004200.json",
+    "sha256": "57b8dc288f5afa01f181d3193ec4eb0ab2c67715b748bad9dc1da6316c52f410",
+    "bytes": 11164635,
+    "group": ".",
+    "records": 300,
+    "collisions": 217,
+    "mode": "rotate_then_translate_accumulated_pose_servo",
+    "layout_hash": "ba3593bb2f6ed1f606b73ef08e99dca54edef22f6168ffe3fb99115dc4837c64",
+    "robot": "ridgeback",
+    "metadata_count_matches": true,
+    "asset_geometry": {
+      "robot_hull": true,
+      "collider_obstacles": 4
+    }
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/collision_sequences_final_20260818_114737.json",
+    "sha256": "51fc0d0889bc7b78bd6f0741aa903cc1e12385a99027465dc1c81ba91ce3cf6b",
+    "bytes": 11886083,
+    "group": ".",
+    "records": 300,
+    "collisions": 212,
+    "mode": "rotate_then_translate_accumulated_pose_servo",
+    "layout_hash": "9050d1a1e4572aeac67a6b412ca791b7668a7866c2984d92c7e04cc9508d3064",
+    "robot": "ridgeback",
+    "metadata_count_matches": true,
+    "asset_geometry": {
+      "robot_hull": true,
+      "collider_obstacles": 3
+    }
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/collision_sequences_final_20260819_011320.json",
+    "sha256": "eb9a9e1a2a3bbb3e61b5c63c681433e8bdc5be4a0e10a8068c9200b468996416",
+    "bytes": 9733635,
+    "group": ".",
+    "records": 300,
+    "collisions": 220,
+    "mode": "rotate_then_translate_accumulated_pose_servo",
+    "layout_hash": "49d6fc646b418b4556e0af9db3d2d06d2361a256f5e0913166dcf9e6b3c9eaf8",
+    "robot": "ridgeback",
+    "metadata_count_matches": true,
+    "asset_geometry": {
+      "robot_hull": true,
+      "collider_obstacles": 1
+    }
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/collision_sequences_final_20260819_130846.json",
+    "sha256": "ca58287b8bbc1e8a1ece60e4f97ff4b8dac9f580c98468244eb676f07ab40fbe",
+    "bytes": 10541569,
+    "group": ".",
+    "records": 300,
+    "collisions": 219,
+    "mode": "rotate_then_translate_accumulated_pose_servo",
+    "layout_hash": "d9bc88a927e7d760a74b50e0be96757aca8fa45c6832fe7c12c8a737500f3c63",
+    "robot": "ridgeback",
+    "metadata_count_matches": true,
+    "asset_geometry": {
+      "robot_hull": true,
+      "collider_obstacles": 2
+    }
+  },
+  {
+    "path": "LLM-RobotPath/collision_dataset/collision_sequences_final_20260820_001540.json",
+    "sha256": "3425683ab4eef13f8f6ad297874051ec239f051f1ec29cd7219ad8286a61d934",
+    "bytes": 10911881,
+    "group": ".",
+    "records": 300,
+    "collisions": 219,
+    "mode": "rotate_then_translate_accumulated_pose_servo",
+    "layout_hash": "d9bc88a927e7d760a74b50e0be96757aca8fa45c6832fe7c12c8a737500f3c63",
+    "robot": "ridgeback",
+    "metadata_count_matches": true,
+    "asset_geometry": {
+      "robot_hull": true,
+      "collider_obstacles": 2
+    }
+  }
+]

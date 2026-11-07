@@ -8,9 +8,31 @@ navigation controller.
 
 ![RobotPath benchmark overview](docs/RobotPath-Benchmark-Overview.png)
 
-> This first public release contains the project code and experiment metadata.
-> The Warehouse USD and other third-party assets are distributed separately
-> while redistribution permissions are being confirmed.
+> **Simple v1.0 is available: 7,030 labeled paths.** Read the dataset without
+> Isaac Sim, a GPU or an API key. Model weights and training code are not released.
+> Warehouse USD and original third-party assets remain excluded.
+
+## Simple dataset download
+
+[Download Simple v1.0 (tar.gz)](downloads/robotpath-simple-v1.0.tar.gz) ·
+[SHA-256](downloads/robotpath-simple-v1.0.tar.gz.sha256) ·
+[Dataset guide](datasets/simple-v1.0/README.md) ·
+[Schema](datasets/simple-v1.0/SCHEMA.md)
+
+The package contains 4,745 collision and 2,285 successful noncollision records,
+fixed train/validation/test splits and three separate transfer tests. It includes
+loading examples and integrity checks, not model inference or evaluation code.
+The figure above covers the broader benchmark; Hard is not in this release,
+and the 900 Simple transfer records comprise layout, robot and joint transfer.
+
+```bash
+python3 datasets/simple-v1.0/tools/validate_dataset.py
+python3 datasets/simple-v1.0/tools/load_dataset.py --split test
+```
+
+Data: [CC BY 4.0](datasets/simple-v1.0/LICENSE-DATA). Code: MIT.
+Geometry permission was confirmed by the author; supporting evidence will be
+added to the [permission record](datasets/simple-v1.0/NOTICE.md).
 
 ## What is included
 
@@ -68,8 +90,9 @@ for the public collision-data shape.
 
 ## Release scope
 
-The first public release is **code-only**. It intentionally does not include
-`data/Assets/` or the full `data/collision_dataset/`. The Warehouse scene was
+The repository includes project code and the exported **Simple v1.0 dataset**.
+It does not include `data/Assets/`, the original `data/collision_dataset/`, Hard
+data, model weights or model training code. The Warehouse scene was
 assembled by the project authors, but its USD files may reference NVIDIA,
 Fab, or other third-party meshes, robots, materials, and textures. A custom
 scene composition does not by itself grant permission to redistribute those
@@ -159,8 +182,20 @@ rights are documented.
 
 ![RobotPath 基准与评测概览](docs/RobotPath-Benchmark-Overview.png)
 
-> 首版公开代码和实验元数据。Warehouse USD 及其中可能涉及的第三方资产，
-> 在确认再分发许可前单独提供。
+> **Simple v1.0 已提供 7,030 条标注数据**，无需 Isaac Sim 或 API key 即可读取。
+> 模型权重、训练代码、Hard 数据和原始 Warehouse 资产不在发布范围内。
+
+## Simple 数据集下载
+
+[下载完整数据包](downloads/robotpath-simple-v1.0.tar.gz) ·
+[数据说明与运行方法](datasets/simple-v1.0/README.md) ·
+[字段定义](datasets/simple-v1.0/SCHEMA.md)
+
+包含 4,745 条碰撞、2,285 条成功未碰撞记录，保留既有划分和三个独立迁移测试集。
+标注正确性已由作者验证。首版提供加载和完整性校验工具，不包含模型评分工具。
+上方配图展示整个基准，包含本次未发布的 Hard；其中 900 条 Simple 迁移记录实际
+分为布局、机器人和联合迁移，各 300 条。数据使用 CC BY 4.0，代码使用 MIT。
+二维几何许可已由作者确认，许可依据待补入 [NOTICE](datasets/simple-v1.0/NOTICE.md)。
 
 ## 已包含内容
 
@@ -231,6 +266,7 @@ robot_controller.start_waypoint_navigation(waypoints)
 
 ## 许可证
 
-仓库中的 MIT 许可证仅覆盖项目自有代码和文档，不覆盖被排除的资产或任何
+Simple 数据和数据说明使用 CC BY 4.0。仓库中的 MIT 许可证覆盖项目自有代码及
+其他项目文档，不覆盖被排除的资产或任何
 第三方内容。取得书面授权后，将通过独立资产包或新的版本标签追加资产，并在
 `NOTICE` 中记录来源、版本、许可证和完整性验证结果。
